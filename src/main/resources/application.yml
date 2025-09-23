@@ -1,3 +1,6 @@
 spring:
   main:
     banner-mode: "off"
+  jackson:
+    serialization:
+          write-dates-as-timestamps: false  # 숫자 타임스탬프 대신 ISO-8601
