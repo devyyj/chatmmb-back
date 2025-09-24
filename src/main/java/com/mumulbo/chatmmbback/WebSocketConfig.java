@@ -29,7 +29,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
         registry.addEndpoint("/ws-sockjs")
                 .setAllowedOriginPatterns("*")
                 .withSockJS()
-                .setDisconnectDelay(5_000)   // 고아 세션 조기 정리
+                .setDisconnectDelay(30_000)   // 고아 세션 조기 정리
                 .setHeartbeatTime(10_000)    // SockJS 레벨 핑
                 .setSessionCookieNeeded(false);
     }
